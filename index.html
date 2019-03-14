@@ -22,7 +22,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </div>
     <script type="module">
       import {DeferredLitElement as LitElement, html} from './deferred-lit-element.js';
-      import {styleString} from '@polymer/lit-element/lib/render-helpers.js';
+      import {styleString} from './node_modules/@polymer/lit-element/lib/render-helpers.js';
 
       var dotStyle = {
         position: 'absolute',
@@ -170,7 +170,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           return html`
             <div style="${style}">
               <div>
-                <s-triangle x="0" y="0" s="1000" children="${this.seconds}"></s-triangle>
+                <s-triangle x="0" y="0" s="500" children="${this.seconds}"></s-triangle>
               </div>
             </div>
           `;

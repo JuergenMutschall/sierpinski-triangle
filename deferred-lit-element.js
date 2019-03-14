@@ -12,10 +12,11 @@
  * http://polymer.github.io/PATENTS.txt
  */
 
-import {LitElement} from '@polymer/lit-element';
+import {LitElement} from './node_modules/@polymer/lit-element/lit-element.js';
+
 import {render} from './node_modules/lit-html/lib/shady-render.js';
 import {TemplateProcessor} from './node_modules/lit-html/lib/template-processor.js';
-export {html} from './node_modules/lit-html';
+export {html} from './node_modules/lit-html/lit-html.js';
 
 const MAX_CHUNK_TIME = 8;
 const microtask = Promise.resolve();
